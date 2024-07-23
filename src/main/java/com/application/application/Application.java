@@ -1,5 +1,6 @@
 package com.application.application;
 
+import foo.bar.WelcomeMessage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,8 +10,8 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 
-int age = 5;
-System.out.println(age);
+var welcomeMessage = new WelcomeMessage();
+System.out.println(welcomeMessage.getWelcomeMessage());
 	}
 
 }
