@@ -20,7 +20,51 @@ public class Run {
         this.location=location;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
+    public String getTitle() {
+        return title;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public LocalDateTime getStartedOn() {
+        return startedOn;
+    }
+
+    public void setStartedOn(LocalDateTime startedOn) {
+        this.startedOn = startedOn;
+    }
+
+    public LocalDateTime getCompletedOn() {
+        return completedOn;
+    }
+
+    public void setCompletedOn(LocalDateTime completedOn) {
+        this.completedOn = completedOn;
+    }
+
+    public Integer getMiles() {
+        return miles;
+    }
+
+    public void setMiles(Integer miles) {
+        this.miles = miles;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 }
