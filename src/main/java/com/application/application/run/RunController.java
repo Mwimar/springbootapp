@@ -7,8 +7,14 @@ import java.util.List;
 
 @RestController
 public class RunController {
+    private final RunRepository runRepository;
 
-List<Run> findAll(){
+    //run repository constructor
+    public RunController(RunRepository runRepository) {
+        this.runRepository = runRepository;
+    }
+
+    List<Run> findAll(){
     return null;
 }
 
