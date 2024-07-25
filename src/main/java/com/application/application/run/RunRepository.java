@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class RunRepository {
@@ -16,8 +17,8 @@ public class RunRepository {
         return runs;
     }
 
-    Run findById(Integer id){
-        return runs.stream().filter(run -> run.id()==id).findFirst().get();
+    Optional <Run> findById(Integer id){
+        return runs.stream().filter(run -> run.id()==id).findFirst();
     };
 @PostConstruct
     private void init(){
@@ -28,7 +29,7 @@ public class RunRepository {
                 3,
                 Location.OUTDOOR));
 
-    runs.add(new Run(1,
+    runs.add(new Run(2,
             "Thursday Run",
             LocalDateTime.now(),
             LocalDateTime.now().plus(50, ChronoUnit.MINUTES),
