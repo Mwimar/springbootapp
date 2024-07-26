@@ -35,4 +35,8 @@ public class RunController {
          return run.get();
     }
 
+    void create (Run run){
+        runRepository.create(run);
+    }
+
 }
